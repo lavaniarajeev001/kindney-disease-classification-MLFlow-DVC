@@ -21,6 +21,21 @@ list_of_file=[
     f"src/{project_name}/pipline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
+     f"src/{project_name}/pipeline/stage_01_data_ingestion.py",
+    f"src/{project_name}/pipeline/stage_02_data_validation.py",
+    f"src/{project_name}/pipeline/stage_03_data_transformation.py",
+    f"src/{project_name}/pipeline/stage_04_model_trainer.py",
+    f"src/{project_name}/pipeline/stage_05_model_evaluation.py",
+    f"src/{project_name}/components/data_ingestion.py",
+    f"src/{project_name}/components/data_transformation.py",
+    f"src/{project_name}/components/model_trainer.py",
+    f"src/{project_name}/components/data_validation.py",
+    f"src/{project_name}/components/model_evaluation.py",
+    "research/1.data_ingestion.ipynb",
+    "research/2.data_validation.ipynb",
+    "research/3.data_transformation.ipynb",
+    "research/4.model_trainer.ipynb",
+    "research/5.model_evaluation.ipynb",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
@@ -32,8 +47,7 @@ list_of_file=[
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html",
-    "dvc.yaml"
-]
+    "dvc.yaml"]
 
 for filepath in list_of_file:
     filepath=Path(filepath)
