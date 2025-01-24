@@ -20,7 +20,7 @@ class PrepareBaseModelPipeline:
 
 if __name__=="__main__":
     try:
-        obj=PrepareBaseModelPipeline
+        obj=PrepareBaseModelPipeline()
         obj.main()
     except Exception as e:
         raise e

@@ -1,6 +1,7 @@
 from src.cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionPipeline
 from src.cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelPipeline
 from src.cnnClassifier.pipeline.stage_03_model_training import ModelTrainingPipeline
+from src.cnnClassifier.pipeline.stage_04_model_evaluation_wit_MLFLOW import EvaluationPipeline
 from src.cnnClassifier.config.configuration import ConfigurationManager
 from src.cnnClassifier.components.data_ingestion import Dataingestion
 from src.cnnClassifier.components.prepare_base_mode import PrepareBaseModel
@@ -28,5 +29,12 @@ try:
    Model_training.main()
 except Exception as e:
    raise e
+
+STAGE_NAME = "Evaluation stage"
+try:
+   model_evalution = EvaluationPipeline()
+   model_evalution.main()
+except Exception as e:
+    raise e
 
     

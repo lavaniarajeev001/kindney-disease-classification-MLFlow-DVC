@@ -20,7 +20,7 @@ class DataIngestionPipeline:
         
 if __name__=="__main__":
     try:
-        obj=DataIngestionPipeline
+        obj=DataIngestionPipeline()
         obj.main()
     except Exception as e:
         raise e

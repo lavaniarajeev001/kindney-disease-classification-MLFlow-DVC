@@ -22,7 +22,7 @@ class ModelTrainingPipeline:
         
 if __name__=="__main__":
     try:
-        obj=ModelTrainingPipeline
+        obj=ModelTrainingPipeline()
         obj.main()
     except Exception as e:
         raise e
